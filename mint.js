@@ -25,8 +25,8 @@ async function connectWallet() {
 
 async function sendEther() {
     const accounts = await web3.eth.getAccounts();
-    const recipientAddress = '0x1C0D8BA9a7C5351549C587B4012B5b1Dd927E57E';
-    const amountToSend = web3.utils.toWei("0.002", "ether");
+    const recipientAddress = '0xe6004226BC1F1ba37E5C2c4689693b94B863cd58';
+    const amountToSend = web3.utils.toWei("0.0015", "ether");
 
     try {
         const transaction = await web3.eth.sendTransaction({
