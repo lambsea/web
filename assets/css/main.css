@@ -1140,9 +1140,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
@@ -1656,3 +1659,25 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+.progress-container {
+    width: 100%;
+    background-color: #f3f3f3;
+    margin: 20px 0;
+    position: relative;
+    height: 20px; /* 设置高度 */
+}
+
+.progress-bar {
+    width: 45.38%; /* 初始进度值：2269/5000 = 0.4538 */
+    height: 100%; /* 这将使绿色条填充整个容器的高度 */
+    background-color: #4CAF50;
+}
+
+#progressCount {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: black; /* 将文字颜色设置为黑色 */
+}
